@@ -5,7 +5,8 @@ pipeline {
       node
         {
 
-        checkout([$class: 'GitSCM', branches: [[name: '2.2.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', noTags: false, reference: '', shallow: true, timeout: 20]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'gitcreds', url: 'https://github.com/bhiravabhatla/shopizer.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '2.2.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', noTags: false, reference: '', shallow: true, timeout: 20]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'gitcreds', url: 'https://github.com/manjunab/shopizer.git']]])
+
         }
     }
 
